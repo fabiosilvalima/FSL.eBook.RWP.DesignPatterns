@@ -198,6 +198,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryChapter\RepositoryDefaultController.cs" />
     <Compile Include="RepositoryChapter\SqlProductRepository.cs" />
     <Compile Include="RepositoryChapter\IProductRepository.cs" />
     <Compile Include="RepositoryChapter\Product.cs" />
@@ -263,6 +264,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Repository\Index.cshtml" />
+    <Content Include="Views\RepositoryDefault\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
