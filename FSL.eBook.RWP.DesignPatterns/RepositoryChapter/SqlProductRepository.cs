@@ -7,7 +7,7 @@ namespace FSL.eBook.RWP.DesignPatterns.RepositoryChapter
 {
     public class SqlProductRepository : SqlRepository, IProductRepository
     {
-        public void InsertProduct(Product product)
+        public void Insert(Product product)
         {
 
         }

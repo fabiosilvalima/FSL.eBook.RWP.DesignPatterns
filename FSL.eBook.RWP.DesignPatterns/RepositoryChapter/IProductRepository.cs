@@ -1,8 +1,8 @@
 ﻿
 namespace FSL.eBook.RWP.DesignPatterns.RepositoryChapter
 {
-    public interface IProductRepository
+    public interface IProductRepository : IEntityRepository<Product>
     {
-        void InsertProduct(Product product);
+
     }
 }

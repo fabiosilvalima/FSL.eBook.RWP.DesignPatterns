@@ -19,9 +19,9 @@ namespace FSL.eBook.RWP.DesignPatterns.RepositoryChapter
                 Name = "Product 100"
             };
 
-            _productRepository.InsertProduct(product);
+            _productRepository.Insert(product);
 
-            return View();
+            return Content("Repository Pattern");
         }
     }
 }

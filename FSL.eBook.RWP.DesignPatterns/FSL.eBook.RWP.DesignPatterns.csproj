@@ -198,7 +198,8 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryChapter\RepositoryDefaultController.cs" />
+    <Compile Include="RepositoryChapter\DapperSqlRepository.cs" />
+    <Compile Include="RepositoryChapter\IEntityRepository.cs" />
     <Compile Include="RepositoryChapter\SqlProductRepository.cs" />
     <Compile Include="RepositoryChapter\IProductRepository.cs" />
     <Compile Include="RepositoryChapter\Product.cs" />
@@ -207,6 +208,22 @@
     <Compile Include="RepositoryChapter\DapperSqlProductRepository.cs" />
     <Compile Include="RepositoryChapter\SqlRepository.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="UnitOfWorkChapter\UnitOfWorkModule.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\DapperSqlPaymentRepository.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\IPaymentRepository.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\IRegisterUnitOfWork.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\Payment.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\RegisterUnitOfWork.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\RegisterUnitOfWorkController.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\DapperSqlProductRepository.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\IEntity.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\IProductRepository.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\Payment.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\Product.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\UnitOfWork.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario2\UnitOfWorkController.cs" />
+    <Compile Include="UnitOfWorkChapter\Scenario1\UnitOfWorkModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -263,8 +280,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Repository\Index.cshtml" />
-    <Content Include="Views\RepositoryDefault\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
