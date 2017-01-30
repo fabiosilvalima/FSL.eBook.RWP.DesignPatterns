@@ -5,16 +5,16 @@ using System.Web;
 
 namespace FSL.eBook.RWP.DesignPatterns.DecoratorChapter
 {
-    public class Tomato : PizzaDecorator
+    public class CheeseDecorator : PizzaDecorator
     {
-        public Tomato(Pizza pizza) : base(pizza)
+        public CheeseDecorator(Pizza pizza) : base(pizza)
         {
-            Description = "Tomato";
+            Description = "Cheese";
         }
 
         public override double CalculateCost()
         {
-            return base.CalculateCost() + 0.25;
+            return base.CalculateCost() + 1.25;
         }
 
         public override string GetDescription()

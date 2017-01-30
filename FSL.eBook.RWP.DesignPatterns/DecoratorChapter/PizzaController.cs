@@ -11,8 +11,8 @@ namespace FSL.eBook.RWP.DesignPatterns.DecoratorChapter
         public ActionResult Index()
         {
             var pizza = new LargePizza();// large pizza
-            var cheese = new Cheese(pizza); //large pizza with cheese
-            var tomato = new Tomato(cheese); //large pizza with cheese and tomato
+            var cheese = new CheeseDecorator(pizza); //large pizza with cheese
+            var tomato = new TomatoDecorator(cheese); //large pizza with cheese and tomato
 
             return Content($"Decorator Pattern Pizza: {tomato.GetDescription()} - {tomato.CalculateCost()}");
         }
