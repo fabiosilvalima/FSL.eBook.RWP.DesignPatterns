@@ -191,6 +191,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DecoratorChapter\Tomato.cs" />
+    <Compile Include="DecoratorChapter\Cheese.cs" />
+    <Compile Include="DecoratorChapter\LargePizza.cs" />
+    <Compile Include="DecoratorChapter\Pizza.cs" />
+    <Compile Include="DecoratorChapter\PizzaController.cs" />
+    <Compile Include="DecoratorChapter\PizzaDecorator.cs" />
+    <Compile Include="DecoratorChapter\SmallPizza.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -286,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Pizza\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
