@@ -231,6 +231,11 @@
     <Compile Include="RepositoryChapter\SqlRepository.cs" />
     <Compile Include="ServiceLocatorChapter\ProductController.cs" />
     <Compile Include="ServiceLocatorChapter\ProductHelper.cs" />
+    <Compile Include="SingletonChapter\DatabaseLog.cs" />
+    <Compile Include="SingletonChapter\ILog.cs" />
+    <Compile Include="SingletonChapter\Log.cs" />
+    <Compile Include="SingletonChapter\SingletonController.cs" />
+    <Compile Include="SingletonChapter\SingletonModule.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="UnitOfWorkChapter\UnitOfWorkModule.cs" />
     <Compile Include="UnitOfWorkChapter\Scenario1\DapperSqlPaymentRepository.cs" />
@@ -307,6 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="FlyweightChapter\" />
     <Folder Include="Views\Adapter\" />
     <Folder Include="Views\Composite\" />
     <Folder Include="Views\Pizza\" />
