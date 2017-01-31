@@ -215,6 +215,11 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyChapter\Calc.cs" />
+    <Compile Include="ProxyChapter\CalcProxy.cs" />
+    <Compile Include="ProxyChapter\ICalc.cs" />
+    <Compile Include="ProxyChapter\ProxyController.cs" />
+    <Compile Include="ProxyChapter\User.cs" />
     <Compile Include="RepositoryChapter\DapperSqlRepository.cs" />
     <Compile Include="RepositoryChapter\IEntityRepository.cs" />
     <Compile Include="RepositoryChapter\SqlProductRepository.cs" />
@@ -305,6 +310,7 @@
     <Folder Include="Views\Adapter\" />
     <Folder Include="Views\Composite\" />
     <Folder Include="Views\Pizza\" />
+    <Folder Include="Views\Proxy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
