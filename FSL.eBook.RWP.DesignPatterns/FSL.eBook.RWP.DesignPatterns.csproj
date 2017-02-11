@@ -247,6 +247,12 @@
     <Compile Include="SingletonChapter\SingletonController.cs" />
     <Compile Include="SingletonChapter\SingletonModule.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="StrategyChapter\BubleSortStrategy.cs" />
+    <Compile Include="StrategyChapter\ISortStrategy.cs" />
+    <Compile Include="StrategyChapter\AscendingSortStrategy.cs" />
+    <Compile Include="StrategyChapter\Context.cs" />
+    <Compile Include="StrategyChapter\DescendingSortStrategy.cs" />
+    <Compile Include="StrategyChapter\StrategyController.cs" />
     <Compile Include="UnitOfWorkChapter\UnitOfWorkModule.cs" />
     <Compile Include="UnitOfWorkChapter\Scenario1\DapperSqlPaymentRepository.cs" />
     <Compile Include="UnitOfWorkChapter\Scenario1\IPaymentRepository.cs" />
