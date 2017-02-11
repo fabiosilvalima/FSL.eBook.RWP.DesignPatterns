@@ -197,6 +197,9 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="ChainChapter\ChainController.cs" />
+    <Compile Include="ChainChapter\Discount.cs" />
+    <Compile Include="ChainChapter\Seller.cs" />
     <Compile Include="CompositeChapter\CompositeController.cs" />
     <Compile Include="CompositeChapter\Controls.cs" />
     <Compile Include="CompositeChapter\IControl.cs" />
