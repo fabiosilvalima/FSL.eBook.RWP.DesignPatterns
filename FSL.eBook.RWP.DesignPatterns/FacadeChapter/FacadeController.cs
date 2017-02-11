@@ -33,7 +33,7 @@ namespace FSL.eBook.RWP.DesignPatterns.FacadeChapter
             securityInfo.Dispose();
             logger.Dispose();
 
-            return Content("Facade");
+            return Content("WithoutFacade");
         }
 
         public ActionResult WithFacade()
@@ -41,7 +41,7 @@ namespace FSL.eBook.RWP.DesignPatterns.FacadeChapter
             var facade = new Facade();
             var result = facade.Pay("3434343", 45.400);
 
-            return Content("Facade");
+            return Content("WithFacade");
         }
     }
 }
