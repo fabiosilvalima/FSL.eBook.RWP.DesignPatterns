@@ -1,0 +1,47 @@
+﻿
+using System.Web.Mvc;
+
+namespace FSL.eBook.RWP.DesignPatterns.FacadeChapter
+{
+    public class FacadeController : Controller
+    {
+        public ActionResult WithoutFacade()
+        {
+            var logger = new Logger();
+            var payment = new Payment();
+            var securityInfo = new SecurityInfo();
+            var transaction = new Trasaction();
+
+            logger.Log("Payment Start");
+            var result = false;
+            var userId = "3434343";
+            var securityId = securityInfo.GetFromUserId(userId);
+            logger.Log($"Security id {securityId} for user id {userId}");
+            transaction.Start();
+            transaction.Do(() =>
+            {
+                var amount = 45.400;
+                result = payment.Pay(securityId, amount);
+                logger.Log($"Paying {amount} for security id {securityId}");
+            });
+            transaction.End();
+            logger.Log("transaction end");
+            logger.Log($"payment result {result}");
+
+            payment.Dispose();
+            transaction.Dispose();
+            securityInfo.Dispose();
+            logger.Dispose();
+
+            return Content("Facade");
+        }
+
+        public ActionResult WithFacade()
+        {
+            var facade = new Facade();
+            var result = facade.Pay("3434343", 45.400);
+
+            return Content("Facade");
+        }
+    }
+}

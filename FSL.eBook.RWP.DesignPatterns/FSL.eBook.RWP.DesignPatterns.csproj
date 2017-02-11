@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ABCpdf, Version=8.1.1.6, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\ABCpdf.DLL</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
       <Private>True</Private>
@@ -207,6 +211,12 @@
     <Compile Include="DecoratorChapter\PizzaController.cs" />
     <Compile Include="DecoratorChapter\PizzaDecorator.cs" />
     <Compile Include="DecoratorChapter\SmallPizza.cs" />
+    <Compile Include="FacadeChapter\Facade.cs" />
+    <Compile Include="FacadeChapter\FacadeController.cs" />
+    <Compile Include="FacadeChapter\Logger.cs" />
+    <Compile Include="FacadeChapter\Payment.cs" />
+    <Compile Include="FacadeChapter\SecurityInfo.cs" />
+    <Compile Include="FacadeChapter\Trasaction.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
