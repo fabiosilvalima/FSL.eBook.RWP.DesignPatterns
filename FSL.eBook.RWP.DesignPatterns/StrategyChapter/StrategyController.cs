@@ -14,12 +14,12 @@ namespace FSL.eBook.RWP.DesignPatterns.StrategyChapter
                 "lima"
             };
 
-            var product = new Context(new DescendingSortStrategy());
-            product.Sort(list);
-            product = new Context(new AscendingSortStrategy());
-            product.Sort(list);
-            product = new Context(new BubleSortStrategy());
-            product.Sort(list);
+            var sort = new Strategy(new DescendingSortStrategy());
+            sort.Sort(list);
+            sort = new Strategy(new AscendingSortStrategy());
+            sort.Sort(list);
+            sort = new Strategy(new BubleSortStrategy());
+            sort.Sort(list);
 
             return Content("Strategy");
         }

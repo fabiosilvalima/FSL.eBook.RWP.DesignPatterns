@@ -250,7 +250,7 @@
     <Compile Include="StrategyChapter\BubleSortStrategy.cs" />
     <Compile Include="StrategyChapter\ISortStrategy.cs" />
     <Compile Include="StrategyChapter\AscendingSortStrategy.cs" />
-    <Compile Include="StrategyChapter\Context.cs" />
+    <Compile Include="StrategyChapter\Strategy.cs" />
     <Compile Include="StrategyChapter\DescendingSortStrategy.cs" />
     <Compile Include="StrategyChapter\StrategyController.cs" />
     <Compile Include="UnitOfWorkChapter\UnitOfWorkModule.cs" />

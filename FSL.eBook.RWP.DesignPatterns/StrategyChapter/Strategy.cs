@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace FSL.eBook.RWP.DesignPatterns.StrategyChapter
 {
-    public class Context
+    public class Strategy
     {
         private ISortStrategy _sortStrategy;
 
-        public Context(ISortStrategy sortStrategy)
+        public Strategy(ISortStrategy sortStrategy)
         {
             _sortStrategy = sortStrategy;
         }
