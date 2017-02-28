@@ -220,6 +220,12 @@
     <Compile Include="FacadeChapter\Payment.cs" />
     <Compile Include="FacadeChapter\SecurityInfo.cs" />
     <Compile Include="FacadeChapter\Trasaction.cs" />
+    <Compile Include="FactoryChapter\Bus.cs" />
+    <Compile Include="FactoryChapter\Car.cs" />
+    <Compile Include="FactoryChapter\FactoryController.cs" />
+    <Compile Include="FactoryChapter\ITransport.cs" />
+    <Compile Include="FactoryChapter\TransportFactory.cs" />
+    <Compile Include="FactoryChapter\Truck.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
