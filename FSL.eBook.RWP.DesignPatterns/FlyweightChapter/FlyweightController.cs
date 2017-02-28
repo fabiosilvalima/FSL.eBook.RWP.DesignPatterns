@@ -12,11 +12,11 @@ namespace FSL.eBook.RWP.DesignPatterns.FlyweightChapter
         {
             int[] tagsIds = new[] { 10, 20, 30, 50, 100, 150, 200, 250, 260, 270, 300, 350, 400, 500, 600, 700, 1000, 1050, 1200 };
             var factory = new ControlFactory();
-            int sum = 0;
             var rnd = new Random();
-            while (sum <= id)
+            int item = 0;
+            while (item <= id)
             {
-                Control graphicalMoneyObj = null;
+                Control control = null;
                 var tag = Tags.Text;
                 int tagId = tagsIds[rnd.Next(0, tagsIds.Length)];
                 if (tagId >= 0 && tagId <= 100)
@@ -27,8 +27,8 @@ namespace FSL.eBook.RWP.DesignPatterns.FlyweightChapter
                 {
                     tag = Tags.Radio;
                 }
-                graphicalMoneyObj = factory.GetControl(tag);
-                sum++;
+                control = factory.GetControl(tag);
+                item++;
             }
 
             return Content("Flyweight");
