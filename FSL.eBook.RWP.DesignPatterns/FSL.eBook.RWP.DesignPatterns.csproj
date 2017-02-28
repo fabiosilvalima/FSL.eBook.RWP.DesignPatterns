@@ -226,6 +226,12 @@
     <Compile Include="FactoryChapter\ITransport.cs" />
     <Compile Include="FactoryChapter\TransportFactory.cs" />
     <Compile Include="FactoryChapter\Truck.cs" />
+    <Compile Include="FlyweightChapter\ControlFactory.cs" />
+    <Compile Include="FlyweightChapter\FlyweightController.cs" />
+    <Compile Include="FlyweightChapter\Radio.cs" />
+    <Compile Include="FlyweightChapter\Control.cs" />
+    <Compile Include="FlyweightChapter\Button.cs" />
+    <Compile Include="FlyweightChapter\Text.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -337,7 +343,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="FlyweightChapter\" />
     <Folder Include="Views\Adapter\" />
     <Folder Include="Views\Composite\" />
     <Folder Include="Views\Pizza\" />
