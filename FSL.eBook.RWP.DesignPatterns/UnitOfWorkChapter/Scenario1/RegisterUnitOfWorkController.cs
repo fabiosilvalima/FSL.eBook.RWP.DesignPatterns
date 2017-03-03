@@ -12,7 +12,7 @@ namespace FSL.eBook.RWP.DesignPatterns.UnitOfWorkChapter.Scenario1
             _unitOfWork = unitOfWork;
         }
 
-        public ActionResult Togetter()
+        public ActionResult Together()
         {
             var product = new Product()
             {
