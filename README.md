@@ -3,7 +3,7 @@
 **Programação no Mundo Real Design Patterns Vol. 1**
 
 Aprenda como e onde usar Design Patterns.
-Repositório oficial de código de exemplos de C# citados no **eBook**.
+Repositório oficial de código fonte de exemplos em C# citados no **eBook**.
 
 ![Programação no Mundo Real Design Patterns Vol. 1](https://www.fabiosilvalima.net/wp-content/uploads/2017/03/fabiosilvalima-ebook-design-patterns-INSTAGRAM.jpg)
 
